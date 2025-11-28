@@ -17,4 +17,68 @@ footer {
   padding: 32px;
   height: calc(100dvh-140px);
   background-image: url("./img/background.jpg");
+  overflow-y: auto;
+}
+
+.chat-row {
+  display: flex;
+
+  margin-bottom: 32px;
+}
+
+.chat-row.sent {
+  justify-content: flex-end;
+}
+
+.chat-row.received {
+  justify-content: flex-start;
+}
+
+.chat-row.sent > .chat-message {
+  background-color: #d5f9ba;
+}
+
+.chat-row.received > .chat-message {
+  background-color: white;
+}
+.chat-message {
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px #00000080;
+}
+
+time {
+  font-size: 11px;
+  color: #aaaaaa;
+}
+
+img {
+  width: 50px;
+}
+
+/* Fondo pagina */
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 16px;
+  border: none;
+}
+
+button {
+  font-size: 32px;
+  color: grey;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  color: green;
 }

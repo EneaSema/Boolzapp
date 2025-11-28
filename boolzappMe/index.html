@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+
+    <!-- Collegamento alle icone di Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Collegamento al foglio di stile -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <!-- Etichetta -->
@@ -25,11 +33,24 @@
       </div>
     </header>
     <!-- Box delle chat -->
-    <div class="chat-box">Center</div>
+    <div class="chat-box">
+      <div class="chat-row sent">
+        <div class="chat-message">
+          <p>Ciao, come va?</p>
+          <time datetime="28/11/2025 20:27:00">28/11/2025 20:27:00</time>
+        </div>
+      </div>
+      <div class="chat-row received">
+        <div class="chat-message">
+          <p>Tutto bene, grazie. E tu?</p>
+          <time datetime="28/11/2025 20:37:00">28/11/2025 20:37:00</time>
+        </div>
+      </div>
+    </div>
     <!-- Fondo pagina -->
     <footer>
       <input type="text" placeholder="Scrivi qui" />
-      <button>&UpArrow;</button>
+      <button><i class="bi bi-arrow-up-circle-fill"></i></button>
     </footer>
   </body>
 </html>
